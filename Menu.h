@@ -1,5 +1,5 @@
-/*! @file FunctionManager.h
-    @brief Gestore delle funzioni matematiche
+/*! @file Menu.h
+    @brief File .h for class Menu
     @author Federico Maria Biasioli Loris Costanzo
 */
 
@@ -10,10 +10,11 @@
 #include "CFunction.h"
 #include "CLogarithmic.h"
 #include "CPower.h"
+#include "CPolinomial.h"
 
-/// @class FunctionManager
-/// @brief Gestisce una lista dinamica di funzioni matematiche
-class FunctionManager
+/// @class Menu
+/// @brief Class Menu
+class Menu
 {
 private:
     std::vector<Function *> functions;
@@ -21,32 +22,31 @@ private:
 public:
     /// @name Constructors and Destructor
     /// @{
-    FunctionManager();
-    ~FunctionManager();
+    Menu();
+    ~Menu();
     /// @}
 
-    /// @name Functions
-    /// @{
-    /// @brief Mostra la lista di tutte le funzioni registrate
+
+    /// @brief Show list of all stored functions
     void VisualizzaFunzioni() const;
 
-    /// @brief Inserisce una nuova funzione dall'input utente
+    /// @brief Inserts a new user's input function
     void InserisciFunzione();
 
-    /// @brief Elimina una funzione tramite ID
-    /// @param id Indice della funzione da eliminare
+    /// @brief Delete a function by ID
+    /// @param id input
     void EliminaFunzione(int id);
 
-    /// @brief Elimina tutte le funzioni registrate
+    /// @brief Delete all stored functions
     void EliminaTutte();
     
-    /// @brief Seleziona una funzione ed esegue il calcolo per un dato x
+    /// @brief Select a function and calculate the result
     void SelezionaFunzione();
     ///@}
 
     /// @name Basic function
     /// @{
-    /// @brief Avvia il menu principale interattivo
+    /// @brief Launch the interactive main menu
     void MenuPrincipale();
     ///@}
 };

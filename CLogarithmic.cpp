@@ -1,5 +1,5 @@
 /*! @file CLogarithmic.cpp
-	@brief Implementetion of class logarithmic
+	@brief Implementetion of class Logarithmic
 	@author Federico Maria Biasioli Loris Costanzo
 */
 #include "CLogarithmic.h"

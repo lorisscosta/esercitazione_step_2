@@ -1,5 +1,5 @@
 /*! @file CPower.cpp
-    @brief Implementetion of class power
+    @brief Implementetion of class Power
     @author Federico Maria Biasioli Loris Costanzo
 */
 

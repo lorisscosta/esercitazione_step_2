@@ -1,5 +1,5 @@
 /*! @file CLogarithmic.h
-	@brief file h for class logarithmic
+	@brief file h for class Logarithmic
 	@author Federico Maria Biasioli Loris Costanzo
 */
 

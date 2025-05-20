@@ -1,5 +1,5 @@
 /*! @file CPolinomial.h
-	@brief file h for class polinomial
+	@brief file h for class Polinomial
 	@author Federico Maria Biasioli Loris Costanzo
 */ 
 

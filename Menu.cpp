@@ -1,5 +1,5 @@
 /*! @file Menu.cpp
-    @brief Implementazione del gestore di funzioni
+    @brief Implementation of class Menu
     @author Federico Maria Biasioli Loris Costanzo
 */
 
@@ -21,9 +21,8 @@ Menu::~Menu()
 }
 
 /**
- * @brief show all the functions
- * @param coefficients array with coefficients (format: c0+c1*x+ ...)
- * @param size size of the array
+ * @brief shows all functions with index
+ * @return void
  */
 void Menu::VisualizzaFunzioni() const
 {
@@ -42,6 +41,11 @@ void Menu::VisualizzaFunzioni() const
     }
 }
 
+/**
+ * @brief store a new function
+ * @param scelta input
+ * @return void
+ */
 void Menu::InserisciFunzione()
 {
     int scelta = -1;
@@ -144,6 +148,11 @@ void Menu::InserisciFunzione()
     } while (scelta != 0);
 }
 
+/**
+ * @brief delete a function
+ * @param id input
+ * @return void
+ */
 void Menu::EliminaFunzione(int id)
 {
     VisualizzaFunzioni();
@@ -177,6 +186,10 @@ void Menu::EliminaFunzione(int id)
     }
 }
 
+/**
+ * @brief delete all functions
+ * @return void
+ */
 void Menu::EliminaTutte()
 {
     for (Function *f : functions)
@@ -187,6 +200,12 @@ void Menu::EliminaTutte()
     cout << "Tutte le funzioni sono state eliminate." << endl;
 }
 
+/**
+ * @brief execute a function
+ * @param id input
+ * @param x input
+ * @return void
+ */
 void Menu::SelezionaFunzione()
 {
     int id;
@@ -212,6 +231,11 @@ void Menu::SelezionaFunzione()
     cout << "Risultato: " << risultato << endl;
 }
 
+/**
+ * @brief shows the main menu
+ * @param scelta input
+ * @return void
+ */
 void Menu::MenuPrincipale()
 {
     int scelta = -1;

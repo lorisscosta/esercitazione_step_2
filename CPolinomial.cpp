@@ -1,5 +1,5 @@
 /*! @file CPolinomial.cpp
- 	@brief Implementation of class CPolinomial.h
+ 	@brief Implementation of class Polinomial
 	@author Federico Maria Biasioli Loris Costanzo
 */ 
 #include "CPolinomial.h"

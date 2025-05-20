@@ -1,5 +1,5 @@
 /*! @file CPower.h
-    @brief File h for class power
+    @brief File h for class Power
     @author Federico Maria Biasioli Loris Costanzo
 */
 
