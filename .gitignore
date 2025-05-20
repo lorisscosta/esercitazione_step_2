@@ -1,0 +1,6 @@
+.vscode/
+*_td.c
+html/
+latex/
+main.cpp
+Doxyfile
