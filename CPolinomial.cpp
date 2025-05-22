@@ -200,7 +200,7 @@ void Polinomial::Dump() {
 	
     for (i = 0; i <= degree; ++i) {
 		if (coeff[i] != 0.) {
-			cout << (coeff[i] > 0 && i > 0 ? " +" : " ") << coeff[i];
+			cout << (coeff[i] > 0 && i > 0 ? " + " : " ") << coeff[i];
             if (i > 0) {
                 cout << "x";
                 if (i > 1) 
@@ -208,5 +208,5 @@ void Polinomial::Dump() {
             }
         }
     }
-	cout << endl;
+	cout <<"\n"<< endl;
 }

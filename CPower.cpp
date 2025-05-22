@@ -3,6 +3,7 @@
     @author Federico Maria Biasioli Loris Costanzo
 */
 
+#include <cmath>
 #include "CPower.h"
 
 /// @brief defaul constructor
@@ -95,8 +96,7 @@ void Power::Dump() {
 		return;
 	}
 
-	cout << "Potenza: " << e_coeff << endl;
-    cout << "Coefficiente della potenza: " << k_coeff <<endl;
+	cout << k_coeff<< "x^" << e_coeff<< endl;
 	cout << endl;
 }
 
@@ -111,13 +111,8 @@ double Power::GetValue(double in){
     if(x==0&&e_coeff==0)
     {
         cout<<" Zero to the zero is an indeterminate form "<<endl;
-        exit(-1);
+        return 0;
     }
-    int i;
-    for(i=1;i<e_coeff;i++)
-    {
-        x=x*in;
-    }
-    result=x*k_coeff;
+    result=k_coeff*pow(x,e_coeff);
 	return result;
 }

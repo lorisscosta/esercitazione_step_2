@@ -18,9 +18,9 @@ Logarithmic::Logarithmic(double b_coefficient, double k_coefficient)
 {
 	if(b_coefficient <= 0 || b_coefficient==1)
 	{	
-		ErrorMessage("Error with b_coefficient (b_coefficient can't be <=0)");
+		ErrorMessage("Error with b_coefficient (base can't be <=0 or =1)");
 		Reset();
-		exit(-1);
+		return;
 	}
 	SetLogarithmic(b_coefficient, k_coefficient);
 }
@@ -135,10 +135,9 @@ void Logarithmic::WarningMessage(const char *string) {
  */ 
 void Logarithmic::Dump() {
 	if (b_coeff == -1) {
-		cout << "Uninitialized Power" << endl;
+		cout << "Uninitialized Logarithmic\n" << endl;
 		return;
 	}
-	cout << "Base del logaritmo: " << b_coeff << endl;
-    cout << "Coefficiente del logaritmo: " << k_coeff <<endl;
+	cout << k_coeff << "Log" << b_coeff << "(x)"<< endl;
 	cout << endl;
 }
